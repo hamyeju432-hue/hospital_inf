@@ -47,4 +47,9 @@ while hp:
 
 response.close()
 
-st_folium(Korea_Map, use_container_width=True, height=650)
+st_folium(
+    Korea_Map,
+    use_container_width=True,
+    height=750,
+    returned_objects=[],  # 💡 지도를 움직여도 서버에 데이터를 다시 보내지 않도록 차단!
+)
